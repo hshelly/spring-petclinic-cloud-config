@@ -15,9 +15,10 @@ management:
   metrics:
     export:
       wavefront:
-        uri: proxy://http://wavefront-proxy.service.internal:4443
+        uri: ${vcap.services.wavefront.credentials.uri}
+        api-token: ${vcap.services.wavefront.credentials.api-token}
 
 wavefront:
-  freemium-account: false
   application:
-    name: spring-petclinic-cloud
+    name: spring-petclinic
+  freemium-account: ${vcap.services.wavefront.credentials.fremium}

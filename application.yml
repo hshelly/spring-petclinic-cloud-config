@@ -32,7 +32,7 @@ management.security.enabled: false
 spring.cloud.refresh.refreshable: false
 wavefront.application.name: pet-clinic-microservices-local
 management.metrics.export.wavefront.application-name=spring-petclinic-cloudfoundry
-management.metrics.export.wavefront.url=proxy://wavefront-proxy.service.internal:4443
+management.metrics.export.wavefront.url=proxy://wavefront-proxy.service.internal:2878
 management.metrics.export.wavefront.freemium=false
 
 # Logging

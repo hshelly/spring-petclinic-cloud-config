@@ -15,9 +15,9 @@ management:
   metrics:
     export:
       wavefront:
-        uri: ${vcap.services.wavefront.credentials.uri}
+        uri: http://wavefront-proxy.service.internal:2878
 
 wavefront:
   application:
     name: spring-petclinic-cloud
-  freemium-account: ${vcap.services.wavefront.credentials.fremium}
+  freemium-account: false

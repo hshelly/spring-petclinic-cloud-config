@@ -19,5 +19,5 @@ management:
 
 wavefront:
   application:
-    name: spring-petclinic
+    name: spring-petclinic-cloud
   freemium-account: ${vcap.services.wavefront.credentials.fremium}

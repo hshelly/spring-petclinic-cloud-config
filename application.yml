@@ -31,9 +31,9 @@ management.security.enabled: false
 # Waiting issue https://github.com/spring-projects/spring-boot/issues/13042
 spring.cloud.refresh.refreshable: false
 wavefront.application.name: pet-clinic-microservices-local
-management.metrics.export.wavefront.application-name=spring-petclinic-cloudfoundry
-management.metrics.export.wavefront.url=proxy://wavefront-proxy.service.internal:2878
-management.metrics.export.wavefront.freemium=false
+management.metrics.export.wavefront.application-name: spring-petclinic-cloudfoundry
+management.metrics.export.wavefront.url: proxy://wavefront-proxy.service.internal:2878
+management.metrics.export.wavefront.freemium: false
 
 # Logging
 logging.level.org.springframework: INFO
